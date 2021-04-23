@@ -1,0 +1,140 @@
+{
+    "categorias": [{
+            "id": 1,
+            "imgURL": "img/computadoras.jpg",
+            "nombre": "Computadoras"
+        },
+        {
+            "id": 2,
+            "imgURL": "img/laptops.jpg",
+            "nombre": "Laptops"
+        },
+        {
+            "id": 3,
+            "imgURL": "img/escritorios.jpg",
+            "nombre": "Escritorios"
+        },
+        {
+            "id": 4,
+            "imgURL": "img/sillas.jpg",
+            "nombre": "Sillas"
+        },
+        {
+            "id": 5,
+            "imgURL": "img/tarjetas_graficas.jpg",
+            "nombre": "Tarjetas Gráficas"
+        }
+    ],
+    "productos": [{
+            "id": 1,
+            "nombre": "Computadora SDDAoij",
+            "precio": 1990.99,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 1
+        }, {
+            "id": 2,
+            "nombre": "Computadora SDDAoij",
+            "precio": 1990.99,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 1
+        },
+        {
+            "id": 3,
+            "nombre": "Laptops Asus 9vje",
+            "precio": 2290.99,
+            "caracteristicas": "Laptop especial para programador",
+            "id_cat": 2
+        },
+        {
+            "id": 4,
+            "nombre": "Laptop Toshiba asops",
+            "precio": 1560.99,
+            "caracteristicas": "Laptop para estudiante",
+            "id_cat": 2
+        },
+        {
+            "id": 5,
+            "nombre": "Escritorio de pino chdhcjs",
+            "precio": 1990.99,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 3
+        },
+        {
+            "id": 6,
+            "nombre": "Escritorio de Cedro 5ghkgf",
+            "precio": 1990.99,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 3
+        },
+        {
+            "id": 7,
+            "nombre": "Escritorio de Caoba cdjc455d",
+            "precio": 1990.99,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 3
+        },
+        {
+            "id": 8,
+            "nombre": "Silla Gamer con luces led",
+            "precio": 551,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 4
+        },
+        {
+            "id": 9,
+            "nombre": "Silla ortopedica con soporte lumbar",
+            "precio": 1210.99,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 4
+        },
+        {
+            "id": 10,
+            "nombre": "Silla de oficina pro 10dcj",
+            "precio": 1000.99,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 4
+        },
+        {
+            "id": 11,
+            "nombre": "Tarjeta gráfica gtx 1050",
+            "precio": 1990.99,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 5
+        },
+        {
+            "id": 12,
+            "nombre": "Tarjeta gráfica gtx 1060",
+            "precio": 2290.99,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 5
+        },
+        {
+            "id": 13,
+            "nombre": "Tarjeta gráfica gtx 1070",
+            "precio": 2490.99,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 5
+        },
+        {
+            "id": 14,
+            "nombre": "Tarjeta gráfica gtx 1080",
+            "precio": 2690.99,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 5
+        },
+        {
+            "id": 15,
+            "nombre": "Tarjeta gráfica gtx 2020",
+            "precio": 2890.99,
+            "caracteristicas": "computadora con enfriamiento liquido",
+            "id_cat": 5
+        },
+        {
+            "nombre": "Silla de cuero 8c8",
+            "precio": 2990.99,
+            "caracteristicas": "Silla hecha con materias de la mejor calidad",
+            "id_cat": 4,
+            "id": 16
+        }
+    ]
+}

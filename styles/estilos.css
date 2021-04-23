@@ -1,0 +1,248 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --azul-claro: #e8f5ff;
+    --azul-fuerte: #6eb8f5;
+    --azul-oscuro: #2196f3;
+}
+
+body {
+    background-color: var(--azul-claro);
+    font-family: 'Lato', sans-serif;
+}
+
+header h1 {
+    height: 15vh;
+    background-color: var(--azul-fuerte);
+    margin: 0;
+    padding: 18px 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+header img {
+    height: 85vh;
+}
+
+#productos {
+    height: 100px;
+    text-align: center;
+}
+
+.menu-informativo {
+    position: relative;
+}
+
+.informacion h2 {
+    text-align: center;
+}
+
+.informacion p {
+    margin: 0;
+    text-align: center;
+}
+
+.informacion {
+    padding: 0 30px;
+    background-color: var(--azul-claro);
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.invisible {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.contenido-quienes-somos {
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    column-gap: 20px;
+}
+
+.tabla-sucursales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+#mapid {
+    height: 180px;
+}
+
+.campo label {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+}
+
+.menu-informativo nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.categoria img {
+    width: 100%;
+    height: 20%;
+    filter: grayscale(1);
+    transition: all 1s ease;
+}
+
+.categoria {
+    position: relative;
+    transition: all 1s ease;
+}
+
+.categoria:hover {
+    transform: translate(10px);
+}
+
+.categoria img:hover {
+    filter: none;
+}
+
+#contenedor-productos-categoria {
+    transition: all 0.5s ease;
+    transform: translate(100%);
+    background-color: white;
+    position: fixed;
+    left: 15%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: scroll;
+    background-color: var(--azul-claro);
+}
+
+#contenedor-productos-categoria h2 {
+    text-align: center;
+}
+
+.producto-categoria {
+    background-color: var(--azul-fuerte);
+    padding: 15px;
+    -webkit-box-shadow: -3px 3px 5px 2px rgba(0, 0, 0, 0.65);
+    box-shadow: -3px 3px 5px 2px rgba(0, 0, 0, 0.65);
+}
+
+.producto-categoria button {
+    background-color: var(--azul-oscuro);
+    outline: none;
+}
+
+.menu-lateral {
+    z-index: 999;
+    position: fixed;
+    right: 85%;
+    top: 0;
+    bottom: 0;
+    transform: translate(-100%);
+    transition: all 0.5s ease;
+}
+
+.lista-productos-categoria p {
+    margin: 1%;
+    margin-bottom: 2%;
+}
+
+.lista-productos-categoria {
+    transition: all 1s ease;
+    padding: 5%;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3%;
+    row-gap: 3%;
+}
+
+.oferta {
+    transition: all 2s ease;
+}
+
+.linea-ofertas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-lateral h2 {
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+
+.categoria p {
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    padding: 5px 0;
+    background-color: black;
+    width: 100%;
+    opacity: .8;
+    color: white;
+}
+
+.categoria:hover p {
+    color: var(--azul-fuerte)
+}
+
+i:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.fa-arrow-right {
+    bottom: 50%;
+}
+
+.fa-times {
+    bottom: 50%;
+}
+
+i {
+    background-color: blue;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: .4;
+    transition: all .5s ease;
+    position: fixed;
+    z-index: 999;
+}
+
+.menu-informativo nav ul {
+    padding: 0;
+}
+
+.menu-informativo nav ul li {
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+    padding: 10px;
+}
+
+.menu-informativo nav ul li a {
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.menu-informativo nav ul li:hover {
+    background-color: var(--azul-oscuro);
+}
+
+.menu-informativo {
+    background-color: var(--azul-fuerte);
+}

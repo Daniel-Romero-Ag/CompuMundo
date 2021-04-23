@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compumundo Hipermegared</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+
+
+<body>
+    <aside class="menu-lateral">
+        <h2>Catalogo</h2>
+        <div class="lista-categorias">
+        </div>
+    </aside>
+    <header>
+        <h1>Tienda de computadoras</h1>
+        <img src="img/logo.jpg" alt="Logo de la empresa">
+    </header>
+    <section id="productos">
+        <div class="linea-ofertas">
+            <div class="oferta">
+                <img src="img/img1.jpg" alt="">
+            </div>
+            <div class="oferta">
+                <img src="img/img2.jpg" alt="">
+            </div>
+            <div class="oferta">
+                <img src="img/img3.jpg" alt="">
+            </div>
+            <div class="oferta">
+                <img src="img/img4.jpg" alt="">
+            </div>
+            <div class="oferta">
+                <img src="img/img5.jpg" alt="">
+            </div>
+            <div class="oferta">
+                <img src="img/img6.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+    <section class="menu-informativo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="" id="btn-contactanos">Contactanos</a>
+                </li>
+                <li>
+                    <a href="" id="btn-quienes-somos">¿Quienes somos?</a>
+                </li>
+                <li>
+                    <a href="" id="btn-sucursales">Sucursales</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="informacion" id="quienes-somos">
+            <h2>
+                Sobre nosotros
+            </h2>
+            <div class="contenido-quienes-somos">
+                <div class="texto-quienes-somos">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eveniet aliquam voluptatibus quisquam ea inventore voluptates fugiat? Vitae maiores sint iste fugit accusamus nam tempora cupiditate voluptates quo aperiam? In! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Voluptatum quaerat veritatis quibusdam quod ducimus. Ratione perspiciatis excepturi a possimus, architecto deleniti harum reiciendis mollitia est adipisci at incidunt eaque corporis!
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, nulla! Consectetur, distinctio ut esse nihil suscipit corrupti. Repudiandae dolore delectus cumque est vero dolores quod deserunt! Ullam optio molestiae amet. Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Voluptate fuga ab repellat, magni repellendus quibusdam! Ad unde atque tempora consequatur praesentium deleniti quod dicta, numquam, voluptatum aliquam provident voluptates soluta!
+                    </p>
+                </div>
+                <img src="img/quienes_somos.jpg" alt="" class="img-quienes-somos">
+            </div>
+        </div>
+        <div class="informacion  invisible" id="contactanos">
+            <h2>Llene el siguiente formulario</h2>
+            <div class="contenido-contactanos">
+                <form action="">
+                    <div class="campo">
+                        <label for="">Asunto:</label>
+                        <input type="text" name="" id="" placeholder="ej. negocios, sucursal, etc">
+                    </div>
+
+                    <div class="campo">
+                        <label for="">Mensaje:</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="informacion  invisible" id="sucursales">
+            <h2>Sucursales</h2>
+            <div class="contenido-contactanos">
+                <div class="tabla-sucursales">
+                    <div class="sucursal">
+                        <div id="myMap" style="height:300px;"></div>
+                        <p>Dirección: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, reprehenderit. Modi aliquid minima assumenda et accusantium autem ex, nam quasi iure harum fuga sint porro reiciendis veritatis sapiente incidunt non.</p>
+                    </div>
+                    <div class="sucursal">
+                        <div id="myMap2" style="height:300px;"></div>
+                        <p>Dirección: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, reprehenderit. Modi aliquid minima assumenda et accusantium autem ex, nam quasi iure harum fuga sint porro reiciendis veritatis sapiente incidunt non.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu-ventas">
+
+    </section>
+    <i class="fas fa-arrow-right"></i>
+    <i class="fas fa-times invisible"></i>
+
+    <section id="contenedor-productos-categoria" class="invisible">
+
+        <h2>Computadoras</h2>
+        <div class="lista-productos-categoria">
+
+        </div>
+    </section>
+
+    <template id="template-categoria">
+        <div class="categoria">
+            <img src="" alt="">
+            <p></p>
+        </div>
+    </template>
+    <template id="template-producto">
+        <div class="producto-categoria">
+            <div class="descripcion-producto">
+                <p><strong>Nombre: </strong></p>
+                <p><strong>Caracteristicas: </strong></p>
+                <p><strong>Precio: </strong>  <button>Comprar</button></p>
+            </div>
+            <div class="imagen-producto">
+                <img src="img/logo.jpg" alt="">
+            </div>
+        </div>
+    </template>
+    <script src="https://kit.fontawesome.com/f0f2121b70.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
